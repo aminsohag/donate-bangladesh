@@ -39,11 +39,11 @@
                 </div>
                 <div class="navbar-center hidden lg:flex gap-4">
                   <img src="assets/logo.png" alt="">
-                  <p>Donate Bangladesh</p>
+                  <p class="text-xl font-semibold">Donate Bangladesh</p>
                 </div>
                 <div class="navbar-end">
                   <div class="">
-                    <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="">660</span> BDT</button>
+                    <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="my-balance">2000</span> BDT</button>
                   </div>
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -67,16 +67,17 @@
       <section class="container mx-auto my-16">
         <div class="flex justify-center gap-6">
             <div class="card-actions">
-              <button class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
+              <button id="donate-page" class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
             </div>
             <div class="card-actions">
-              <button class="btn bg-base-100 px-8 text-[#111111] text-xl font-bold text-opacity-70">History</button>
+              <button id="history-page" class="btn bg-base-100 px-8 text-[#111111] text-xl font-bold text-opacity-70">History</button>
             </div> 
         </div>
       </section>
       <!--second  -->
       <section class="container mx-auto my-16">
-        <div class="space-y-6">
+        <!-- donate part -->
+        <div id="donate-section" class="space-y-6">
           <!-- card 1 -->
           <div class="bg-base-100 border rounded-lg  shadow-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div class="">
@@ -85,17 +86,17 @@
             <div class="space-y-8">
               <div class="space-y-6">
                 <div class="">
-                  <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="">660</span> BDT</button>
+                  <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="current-balance">660</span> BDT</button>
                 </div>
                 <h2 class="text-xl  font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                 <p class="text-justify text-[#111111] text-opacity-70"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
               </div>
               <div class="space-y-4 pt-4">
                 <div>
-                  <input class="p-4 w-full  border rounded-lg"  type="text" name="" id="" placeholder="Write Donation Amount">
+                  <input id="input-amount" class="p-4 w-full  border rounded-lg"  type="text" name="" id="" placeholder="Write Donation Amount">
                 </div>
                 <div>
-                  <button class="w-full bg-[#B4F461]  p-4 rounded-lg text-xl font-semibold items-center">Donate Now</button>
+                  <button id="add-amount" class="w-full bg-[#B4F461]  p-4 rounded-lg text-xl font-semibold items-center">Donate Now</button>
                 </div>
               </div>
             </div>
@@ -108,17 +109,17 @@
             <div class="space-y-8">
               <div class="space-y-6">
                 <div class="">
-                  <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="">660</span> BDT</button>
+                  <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="current-balance2">660</span> BDT</button>
                 </div>
                 <h2 class="text-xl  font-bold">Donate for Flood Relief in Feni,Bangladesh</h2>
                 <p class="text-justify text-[#111111] text-opacity-70">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
               </div>
               <div class="space-y-4 pt-8">
                 <div>
-                  <input class="p-4 w-full  border rounded-lg"  type="text" name="" id="" placeholder="Write Donation Amount">
+                  <input id="input-amount2" class="p-4 w-full  border rounded-lg"  type="text" name="" id="" placeholder="Write Donation Amount">
                 </div>
                 <div>
-                  <button class="w-full bg-[#B4F461]  p-4 rounded-lg text-xl font-semibold items-center">Donate Now</button>
+                  <button id="add-amount2" class="w-full bg-[#B4F461]  p-4 rounded-lg text-xl font-semibold items-center">Donate Now</button>
                 </div>
               </div>
             </div>
@@ -131,25 +132,47 @@
             <div class="space-y-8">
               <div class="space-y-6">
                 <div class="">
-                  <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="">600</span> BDT</button>
+                  <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="current-balance3">600</span> BDT</button>
                 </div>
                 <h2 class="text-xl  font-bold">Aid for Injured in the Quota Movement</h2>
                 <p class="text-justify text-[#111111] text-opacity-70">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
               </div>
               <div class="space-y-4 pt-8">
                 <div>
-                  <input class="p-4 w-full  border rounded-lg"  type="text" name="" id="" placeholder="Write Donation Amount">
+                  <input id="input-amount3" class="p-4 w-full  border rounded-lg"  type="text" name="" id="" placeholder="Write Donation Amount">
                 </div>
                 <div>
-                  <button class="w-full bg-[#B4F461]  p-4 rounded-lg text-xl font-semibold items-center">Donate Now</button>
+                  <button id="add-amount3" class="w-full bg-[#B4F461]  p-4 rounded-lg text-xl font-semibold items-center">Donate Now</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- modal start -->
+        <dialog id="Successfully"  class="modal">
+          <div class="p-6 lg:px-12 py-6  rounded-xl flex flex-col justify-center items-center space-y-4 bg-white">
+            <h1 class="text-2xl lg:text-4xl font-bold">Congrates!</h1>
+            <img src="assets/coin.png" alt="">
+            <p class="text-lg lg:text-2xl">You Have Donated for Humankind</p>
+            <p class="text-lg lg:text-2xl font-bold">Successfully</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">close confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+         <!-- modal end -->
+        <!-- history part -->
+         <div id="history-section" class="hidden space-y-6">
+         </div>
       </section>
     </main>
-    <footer>
+    <footer class="my-16 container mx-auto">
     </footer>
+
+    <script src="js/get-id-function.js"></script>
+    <script src="js/add-money.js"></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
