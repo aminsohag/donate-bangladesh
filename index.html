@@ -31,11 +31,11 @@
     </style>
 </head>
 <body class="font-lexend">
-    <header class="bg-[#F9F7F3]">
-        <nav class="container mx-auto">
-            <div class="navbar pb-8">
+    <header class="sticky top-0">
+        <nav class="bg-[#F9F7F3]">
+            <div class="container mx-auto navbar pb-8">
                 <div class="navbar-start">
-                  <a class="py-3 px-8 rounded-lg bg-[#B4F461] text-xl">Blog</a>
+                  <button id="blog-btn"><a class="py-3 px-8 rounded-lg bg-[#B4F461] text-xl">Blog</a></button>
                 </div>
                 <div class="navbar-center hidden lg:flex gap-4">
                   <img src="assets/logo.png" alt="">
@@ -59,20 +59,28 @@
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div>  
         </nav>
+        <div class="flex justify-center gap-6 py-8 bg-[#f6f7f4] bg-opacity-40">
+          <div class="card-actions">
+            <button id="donate-page" class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
+          </div>
+          <div class="card-actions">
+            <button id="history-page" class="btn bg-base-100 px-8 text-[#111111] text-xl font-bold text-opacity-70">History</button>
+          </div> 
+      </div>  
     </header>
     <main>
       <!-- first -->
       <section class="container mx-auto my-16">
-        <div class="flex justify-center gap-6">
+        <!-- <div class="flex justify-center gap-6">
             <div class="card-actions">
               <button id="donate-page" class="btn bg-[#B4F461] text-xl font-bold px-8">Donation</button>
             </div>
             <div class="card-actions">
               <button id="history-page" class="btn bg-base-100 px-8 text-[#111111] text-xl font-bold text-opacity-70">History</button>
             </div> 
-        </div>
+        </div> -->
       </section>
       <!--second  -->
       <section class="container mx-auto my-16">

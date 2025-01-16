@@ -1,11 +1,15 @@
 document.getElementById('donate-page').addEventListener('click', function(){
     
     showSection('donate-section');
+    document.getElementById('donate-page').classList.add('bg-[#B4F461]');
+    document.getElementById('history-page').classList.remove('bg-[#B4F461]');
 })
 
 document.getElementById('history-page').addEventListener('click', function(){
     
     showSection('history-section');
+    document.getElementById('history-page').classList.add('bg-[#B4F461]');
+    document.getElementById('donate-page').classList.remove('bg-[#B4F461]');
 })
 
 function showSection(id){

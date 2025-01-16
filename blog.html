@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a8144c5d0d.js" crossorigin="anonymous"></script>
+    <!-- tailwind daisy-ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+            }
+          }
+        }
+    </script>
+    <style>
+        .font-lexend{
+            font-family: "Lexend", serif;
+        }
+    </style>
+</head>
+<body class="font-lexend">
+    <header class="bg-[#F9F7F3]">
+        <nav class="container mx-auto">
+            <div class="navbar pb-8">
+                <div class="navbar-start">
+                  <button><a class="py-3 px-8 rounded-lg bg-[#B4F461] text-xl">Home</a></button>
+                </div>
+                <div class="navbar-center hidden lg:flex gap-4">
+                  <img src="assets/logo.png" alt="">
+                  <p class="text-xl font-semibold">Donate Bangladesh</p>
+                </div>
+                <div class="navbar-end">
+                  <div class="">
+                    <button class="p-4 border flex items-center gap-2 rounded-lg"><img src="assets/coin.png" alt=""><span id="my-balance">2000</span> BDT</button>
+                  </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main class="container mx-auto">
+      <section class="my-16">
+        <div>
+            <h1 class="text-5xl font-bold my-6">Important FAQ</h1>
+            <div class="join join-vertical w-full">
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                  <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a web page as a tree of objects, with each object corresponding to a part of the page, such as elements, attributes, and text</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+                  <div class="collapse-content">
+                    <p>In JavaScript, you can select elements from the DOM (Document Object Model) using various methods, depending on the criteria (such as id, class, or tag name) and the number of elements you want to select. Below are the most commonly used methods to select elements from the DOM: 1. getElementById(), 2. getElementsByClassName(), 3. getElementsByTagName(), 4. querySelector(), 5. querySelectorAll()</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why it is useful?</div>
+                  <div class="collapse-content">
+                    <p>Event delegation is a technique in JavaScript where a single event listener is attached to a parent element instead of multiple individual event listeners attached to each child element. The parent element listens for events on its children, and when an event occurs on a child, the event "bubbles" up to the parent, allowing the parent to handle the event.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow join-item border-base-300 border">
+                  <input type="radio" name="my-accordion-4" />
+                  <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the DOM?</div>
+                  <div class="collapse-content">
+                    <p>DOM Manipulation (Attributes & Styles):
+
+                        Attributes:
+                        
+                        Get Attribute: element.getAttribute('attr')
+                        Set Attribute: element.setAttribute('attr', value)
+                        Remove Attribute: element.removeAttribute('attr')
+                        Styles:
+                        
+                        Get Style (Computed): window.getComputedStyle(element).property
+                        Set Style: element.style.property = 'value'
+                        Remove Style: element.style.property = ''
+                        Classes:
+                        
+                        Add Class: element.classList.add('class')
+                        Remove Class: element.classList.remove('class')
+                        Toggle Class: element.classList.toggle('class')
+                        Check Class: element.classList.contains('class')</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+    </main>
+    <footer class="my-16 container mx-auto">
+    </footer>
+
+    <script src="js/get-id-function.js"></script>
+    <script src="js/add-money.js"></script>
+    <script src="js/features.js"></script>
+</body>
+</html>
