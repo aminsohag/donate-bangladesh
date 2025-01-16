@@ -8,7 +8,7 @@ document.getElementById('add-amount').addEventListener('click', function(){
         return;
     }
     const newMyBalance = myBalance - addMoney;
-    document.getElementById('my-balance').innerText = newMyBalance;
+    document.getElementById('my-balance').innerText = newMyBalance.toFixed(2);
     const currentBalance = getTextAmount('current-balance');
     const newBalance = addMoney + currentBalance;
     document.getElementById('current-balance').innerText = newBalance.toFixed(2);
@@ -40,7 +40,7 @@ document.getElementById('add-amount2').addEventListener('click', function(){
         return;
     }
     const newMyBalance = myBalance - addMoney;
-    document.getElementById('my-balance').innerText = newMyBalance;
+    document.getElementById('my-balance').innerText = newMyBalance.toFixed(2);
     const currentBalance = getTextAmount('current-balance2');
     const newBalance = addMoney + currentBalance;
     document.getElementById('current-balance2').innerText = newBalance.toFixed(2);
@@ -72,7 +72,7 @@ document.getElementById('add-amount3').addEventListener('click', function(){
         return;
     }
     const newMyBalance = myBalance - addMoney;
-    document.getElementById('my-balance').innerText = newMyBalance;
+    document.getElementById('my-balance').innerText = newMyBalance.toFixed(2);
     const currentBalance = getTextAmount('current-balance3');
     const newBalance = addMoney + currentBalance;
     document.getElementById('current-balance3').innerText = newBalance.toFixed(2);
