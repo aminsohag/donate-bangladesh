@@ -4,7 +4,7 @@ document.getElementById('add-amount').addEventListener('click', function(){
     const addMoney = getInputAmount('input-amount');
     
     if(isNaN(addMoney) || myBalance < addMoney || addMoney < 0){
-        alert('Failed');
+        alert('Invalid Donation Amount');
         return;
     }
     const newMyBalance = myBalance - addMoney;
